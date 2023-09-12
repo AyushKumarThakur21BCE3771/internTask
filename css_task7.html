@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            width: 50vw;
+            height: 65vh;
+            background-color: rgba(128, 0, 128, 0.525);
+            margin-top: 10vh;
+            margin-left: 15vw;
+            padding: 3em 5em;
+            box-sizing: border-box;
+        }
+        form{
+            width: 100%;
+            height: 100%;
+            background-color: purple;
+            padding: 5% 5%;
+            color: white;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 0.25fr 0.5fr;
+            grid-template-rows: repeat(9,1fr);
+            gap: 5%;
+        }
+        #language{
+            width: 100%;
+            height: 100%;
+        }
+        .register{
+            grid-column: 1/3;
+            padding: 0%;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+        .register:hover{
+            background-color: rgb(117, 186, 14);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <label for="number">Phone Number:</label>
+            <input type="text" name="phnumber" id="phnumber">
+            <label for="gender">Gender:</label>
+            <div class="genderselect">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Others</label>
+                <input type="radio" name="gender" id="others">
+            </div>
+            <label for="language">Language:</label>
+            <div class="languageselect">
+                <select name="language" id="language">
+                    <option value="notselectd" disabled selected>Select Language</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="nepali">Neapli</option>
+                    <option value="maithili">Maithili</option>
+                </select>
+            </div>
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" name="zipcode" id="zipcode">
+            <label for="about">About:</label>
+            <input type="text" name="about" id="about">
+            <button class="register">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+

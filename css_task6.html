@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            width: 200px;
+            height: 200px;
+        }
+        .loginform{
+            width: 400px;
+            display: inline-flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .boldtext{
+            font-weight: bold;
+        }
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 4px;
+            border: 1px solid rgb(177, 172, 172);
+            border-radius: 3px;
+        }
+        .loginbtn{
+            width: 100%;
+            margin-top: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            background-color: rgb(106, 216, 106);
+            border: none;
+            font-size: 14px;
+            font-weight: bolder;
+            color: aliceblue;
+        }
+        #rememberme{
+            width: 20px;
+            margin-top: 8px;
+        }
+        .cancel_forgot{
+            padding: 10px 5px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(238, 236, 236);
+            border-bottom: 1px solid rgb(177, 172, 172);
+            border-top: 1px solid rgb(177, 172, 172);
+            border-radius: 5px;
+        }
+        #cancel{
+            padding: 4px 6px;
+            background-color: rgba(255, 0, 0, 0.766);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            transition: all 0.5s ease;
+        }
+        #cancel:hover{
+            cursor: pointer;
+            background-color: rgb(255, 0, 0);
+            color: black;
+        }
+        #forgotpassword{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            transition: all 2s ease;
+            padding: 2px;
+        }
+        #forgotpassword:hover{
+            text-decoration: underline;
+        }
+        @media screen and (max-width:425px) {
+            .loginform{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="image">
+            <img src="customer_service_girl.jpg" alt="image">
+        </div>
+        <div class="loginform">
+            <form action="">
+                <label for="username" class="boldtext">Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Enter Username"><br>
+                <label for="password" class="boldtext">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Enter Password"><br>
+                <button class="loginbtn">Login</button><br>
+                <input type="checkbox" name="rememberme" id="rememberme">
+                <label for="rememberme">Remember me</label><br>
+            </form>
+            <div class="cancel_forgot">
+                <button type="reset" id="cancel">Cancel</button>
+                <a href="#" target="_blank" id="forgotpassword">Forgot password ?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

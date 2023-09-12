@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            width: 32vw;
+            height: 55vh;
+            margin: 60px;
+            color: rgb(144, 2, 85);
+            background-color: rgba(206, 206, 75, 0.875);
+            display: grid;
+            grid-template-columns: 150px 300px;
+            grid-gap: 20px;
+        }
+        .links{
+            margin-top: 30px;
+        }
+        .box{
+            display: grid;
+            grid-template-columns: 115px 15px;
+            grid-template-rows: 40px;
+            margin-left: 10px;
+        }
+        .box a{
+            background-color: whitesmoke;
+            margin-top: 10px;
+            padding: 3px 8px;
+            text-decoration: none;
+            color: blue;
+        }
+        .home{
+            color: rgb(144,2,85) !important;
+            font-weight: bold;
+        }
+        .smallbox{
+            /* width: 10px;
+            height: 20px; */
+            background-color: black;
+            /* position: absolute; */
+            margin-top: 10px;
+        }
+        .text h2{
+            margin-top: 20px;
+            margin-bottom:20px;
+            font-size: 32px;
+        }
+        .text .addmargin{
+            margin-top: 17px;
+        }
+        hr{
+            border: 1px dashed rgb(144, 2, 85);
+            margin-top: 17px;
+            margin-bottom: 17px;
+        }
+        .italicstyle{
+            font-family: cursive;
+            /* margin-top: 17px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="links">
+            <div class="box">
+                <a href="./task5.html" class="home">Home page</a>
+                <div class="smallbox"></div>
+            </div>
+            <div class="box">
+                <a href="#">Musings</a>
+                <div class="smallbox"></div>
+            </div>
+            <div class="box">
+                <a href="#">My town</a>
+                <div class="smallbox"></div>
+            </div>
+            <div class="box">
+                <a href="#">Links</a>
+                <div class="smallbox"></div>
+            </div>
+        </div>
+        <div class="text">
+            <h2>My first styled page</h2>
+            <p class="addmargin">Welcome to my styled page!</p>
+            <p class="addmargin">It lacks images, but at least it has styles. And it<br>has links, even if they don't go anywhere...</p>
+            <p class="addmargin">thre should be more here, but I don't know what yet.</p>
+            <hr>
+            <p class="italicstyle" class="addmargin">Made 7 September 2023</p>
+            <p class="italicstyle">by myself.</p>
+        </div>
+    </div>
+</body>
+</html>

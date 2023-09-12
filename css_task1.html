@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #table1{
+            background-color: rgba(97, 233, 219, 0.708);
+            border-radius: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 2px;
+        }
+        #table1 td, #table1 th{
+            width: 350px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        #table2{
+            border-spacing: 25px;
+        }
+        #table2 td{
+            border: 3px solid rgb(132, 236, 28);
+            width: 80px;
+            height: 60px;
+        }
+        .box1{
+            border-radius: 7px;
+        }
+        .box3{
+            border-radius: 18px;
+        }
+        .box6{
+            border-radius: 50%;
+        }
+        .box9{
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        @media screen and (max-width: 1150px) {
+            #table1{
+                margin: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <table id="table1">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="table2">
+            <tbody>
+                <tr>
+                    <td class="box1"></td>
+                    <td class="box1"></td>
+                    <td class="box3"></td>
+                </tr>
+                <tr>
+                    <td class="box1"></td>
+                    <td class="box5"></td>
+                    <td class="box3"></td>
+                </tr>
+                <tr>
+                    <td class="box6"></td>
+                    <td class="box5"></td>
+                    <td class="box9"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
